@@ -1,6 +1,7 @@
+var x;
 function getNumber(num){
     var input=document.getElementById("input");
-    input.value+=num
+    x=input.value+=num
     
 }
 function forClear(){
@@ -9,6 +10,6 @@ function forClear(){
 }
 function getResult(){
     var input=document.getElementById("input");
-    input.value=eval(input.value)
-    
+    var a=eval(input.value)
+    input.value= x +"="+a
 }
