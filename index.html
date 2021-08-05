@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
+
 <body>
-<h1>Calculator</h1>
-<div id="main">
-    <div>
-        <input id="input" type="text" placeholder="0">
+    <h1>Calculator</h1>
+    <div id="main">
+        <div>
+            <input id="input" type="text" placeholder="0">
+        </div>
+        <div>
+            <button type="button" id="Cbtn" class="btn btn-danger"  onclick="forClear()">C</button>
+            <button type="button" id="btn" class="btn btn-primary col" onclick="getNumber('/')">/</button>
+        </div>
+         <div>
+            <button type="button" id="btn" class="btn btn-danger"  onclick="getNumber('7')">7</button>
+            <button type="button" id="btn" class="btn btn-danger"  onclick="getNumber('8')">8</button>
+            <button type="button" id="btn" class="btn btn-danger"  onclick="getNumber('9')">9</button>
+            <button type="button" id="btn" class="btn btn-danger col" onclick="getNumber('*')">*</button>
+        </div>
+        <div>
+            <button type="button" id="btn" class="btn btn-danger" onclick="getNumber('4')">4</button>
+            <button type="button" id="btn" class="btn btn-danger" onclick="getNumber('5')">5</button>
+            <button type="button" id="btn" class="btn btn-danger" onclick="getNumber('6')">6</button>
+            <button type="button" id="btn" class="btn btn-danger col" onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button type="button" id="btn"  class="btn btn-danger" onclick="getNumber('1')">1</button>
+            <button type="button" id="btn" class="btn btn-danger" onclick="getNumber('2')">2</button>
+            <button type="button" id="btn" class="btn btn-danger"  onclick="getNumber('3')">3</button>
+            <button type="button" id="btn" class="btn btn-danger col" onclick="getNumber('+')">+</button>
+
+        </div>
+        <div>
+            <button type="button" id="btn" class="btn btn-danger" onclick="getNumber('0')">0</button>
+            <button type="button" id="btn"  class="btn btn-danger" onclick="getNumber('.')">.</button>
+            <button id="btnhlf" class="btn btn-danger " onclick="getResult()">=</button>
+           
+
+        </div>
     </div>
-    <div >
-        <button id="Cbtn" onclick="forClear()">C</button>
-    </div>
-    <div>
-        <button id="btn" onclick="getNumber('7')">7</button>
-        <button id="btn" onclick="getNumber('8')">8</button>
-        <button id="btn" onclick="getNumber('9')">9</button>
-        <button id="btn" class="btn" onclick="getNumber('x')">X</button>
-    </div>
-    <div>
-        <button id="btn" onclick="getNumber('4')">4</button>
-        <button id="btn" onclick="getNumber('5')">5</button>
-        <button id="btn" onclick="getNumber('6')">6</button>
-        <button id="btn" class="btn" onclick="getNumber('-')">-</button>
-    </div>
-    <div>
-        <button id="btn"  onclick="getNumber('1')">1</button>
-        <button id="btn" onclick="getNumber('2')">2</button>
-        <button id="btn" onclick="getNumber('3')">3</button>
-        <button id="btn" class="btn" onclick="getNumber('+')">+</button>
-    </div>
-    <div>
-        <button id="btn" onclick="getNumber('0')">0</button>
-        <button id="btnhlf" onclick="getResult()">=</button>
-        <button id="btn" class="btn" onclick="getNumber('/')">/</button>
-        
-    </div>
-</div>
 
     <script src="./app.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
