@@ -20,11 +20,11 @@ h1{
 #Cbtn{
     width: 73%;
     margin:2.8px 0px 2px 0px;
-    background-color: rgb(200, 30, 30);
+    background-color: rgb(7, 6, 6);
     color: #fff;
 }
 .col{
-    background-color: rgb(51, 181, 229) !important; 
+    background-color: rgb(183, 240, 29) !important; 
     color: #fff;
 }
 #btn{
@@ -38,7 +38,7 @@ h1{
     width: 47.5%;
     border: none;
     margin: 2px;
-    background-color: rgb(43, 187, 173);
+    background-color: rgb(253, 12, 12);
 } 
  #btn:hover{
     background-color: white;
